@@ -25,9 +25,9 @@ void imprime_vet(int vet[], int tam) {
 
 int main()
 {
-    //1 = mÈtodo da divis„o
-    //2 = mÈtodo da multiplicaÁ„o
-    //3 = mÈtodo do meio-quadrado
+    //1 = m√©todo da divis√£o
+    //2 = m√©todo da multiplica√ß√£o
+    //3 = m√©todo do meio-quadrado
     int M = 200;
     int *vet = vetor(M*2);
     Hash ha;
@@ -39,13 +39,13 @@ int main()
     cout << "Colisoes do metodo da divisao = " << ha.getCol() << endl << endl;
     ha.destroy();
     ha.create(M, 2);
-    for(int i = 0; i < M; ++i) {
+    for(int i = 0; i < M*2; ++i) {
         p = ha.insert(vet[i]);
     }
     cout << "Colisoes do metodo da multiplicacao = " << ha.getCol() << endl << endl;
     ha.destroy();
     ha.create(M, 3);
-    for(int i = 0; i < M; ++i) {
+    for(int i = 0; i < M*2; ++i) {
         p = ha.insert(vet[i]);
     }
     cout << "Colisoes do metodo do meio-quadrado = " << ha.getCol() << endl << endl;
